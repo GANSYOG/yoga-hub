@@ -1,0 +1,23 @@
+generator client { provider = "prisma-client-js" }
+datasource db { provider = "postgresql"; url = env("DATABASE_URL") }
+
+enum LeadStatus { NEW CONTACTED TRIAL_BOOKED TRIAL_COMPLETED CONVERTED LOST }
+
+model Lead {
+  id             String     @id @default(cuid())
+  name           String
+  phone          String
+  email          String?
+  age            Int?
+  program        String
+  preferred_time String?
+  source         String     @default("website")
+  message        String?
+  status         LeadStatus @default(NEW)
+  created_at     DateTime   @default(now())
+  @@index([status, created_at])
+}
+
+model Program { id String @id @default(cuid()); slug String @unique; title String; active Boolean @default(true) }
+model Testimonial { id String @id @default(cuid()); name String; program String; text String; approved Boolean @default(false) }
+model Faq { id String @id @default(cuid()); q String; a String; sort Int @default(0) }
