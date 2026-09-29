@@ -13,6 +13,7 @@ const path = require("path");
 const app = express();
 app.use(helmet({ contentSecurityPolicy: false })); app.use(cors({ origin: process.env.FRONTEND_URL || "*" }));
 app.get("/", (req, res) => res.sendFile(path.join(__dirname, "../index.html")));
+app.get("/index.html", (req, res) => res.sendFile(path.join(__dirname, "../index.html")));
 app.use("/css", express.static(path.join(__dirname, "../css")));
 app.use("/js", express.static(path.join(__dirname, "../js")));
 app.use("/assets", express.static(path.join(__dirname, "../assets")));
