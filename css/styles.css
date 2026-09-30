@@ -103,13 +103,6 @@ footer{background:#1c0e03;color:#e9d6bc;padding:60px 0 0} footer a{color:#e9d6bc
 /* ============ LANDING — dark framed panel (fencing-reference language) ============ */
 .yh-wrap{background:linear-gradient(180deg,#545458,#333336);padding:28px 22px}
 .yh-frame{position:relative;max-width:1360px;margin:0 auto;background:#060606;color:#fff;border:10px solid #fff;border-radius:32px;overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.6)}
-.yh-top{position:relative;z-index:3;display:flex;align-items:center;gap:20px;padding:30px 48px 0}
-.yh-mark{width:34px;height:34px;display:grid;place-items:center;font-family:var(--font-h);font-weight:900;font-size:19px;color:var(--gold2);border:1.5px solid var(--gold);border-radius:6px;text-decoration:none}
-.yh-links{display:flex;gap:110px;margin:0 auto}
-.yh-links a{color:#fff;text-decoration:none;font-weight:400;font-size:19px;opacity:.92}
-.yh-links a:hover{color:var(--gold2)}
-.yh-burger{display:flex;flex-direction:column;gap:8px;background:none;border:0;cursor:pointer;padding:8px}
-.yh-burger span{width:36px;height:3px;background:var(--gold);border-radius:2px}
 .yh-main{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0;align-items:stretch}
 .yh-shot{position:relative;margin:0;min-height:600px;background:linear-gradient(160deg,#1c1c1f,#060606);display:grid;place-items:center;overflow:hidden}
 .yh-shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
@@ -122,7 +115,7 @@ footer{background:#1c0e03;color:#e9d6bc;padding:60px 0 0} footer a{color:#e9d6bc
 .yh-rail a{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.14);color:#cfcfd4;text-decoration:none}
 .yh-rail a:hover{background:var(--gold);color:#000}
 .yh-rail .yh-share{margin-top:auto;margin-bottom:8px;background:none;color:var(--gold)}
-.yh-body{padding:34px 48px 40px;display:flex;flex-direction:column}
+.yh-body{padding:48px 48px 40px;display:flex;flex-direction:column}
 .yh-eyebrow{font-size:12px;font-weight:700;letter-spacing:.26em;color:var(--gold2);margin:0 0 10px}
 .yh-title{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(72px,8.4vw,148px);line-height:.95;letter-spacing:.01em;margin:0;color:#fff}
 .yh-title .ol{color:var(--gold)}
@@ -152,15 +145,15 @@ footer{background:#1c0e03;color:#e9d6bc;padding:60px 0 0} footer a{color:#e9d6bc
 .yh-card p{font-size:13px;color:#55555c;margin:0 0 12px}
 .yh-play{margin-top:auto;width:46px;height:46px;border-radius:50%;background:rgba(245,158,0,.2);color:#c26a00;display:grid;place-items:center;font-size:16px}
 .yh-card:hover .yh-play{background:var(--gold);color:#000}
-@media(max-width:1100px){.yh-links{gap:48px}.yh-bottom{grid-template-columns:1fr}}
+@media(max-width:1100px){.yh-bottom{grid-template-columns:1fr}}
 @media(max-width:900px){
-.yh-links{display:none}.yh-main{grid-template-columns:1fr}
+.yh-main{grid-template-columns:1fr}
 .yh-shot{min-height:380px}.yh-shot::after{background:linear-gradient(0deg,rgba(6,6,6,.8),transparent 60%)}
 .yh-rail{left:0;right:0;top:auto;bottom:10px;flex-direction:row;gap:16px}.yh-rail .yh-share{margin:0}
-.yh-body{padding:24px 24px 30px}.yh-cta{gap:14px}.yb-solid,.yb-line{min-width:0;flex:1;font-size:17px}
+.yh-body{padding:28px 24px 30px}.yh-cta{gap:14px}.yb-solid,.yb-line{min-width:0;flex:1;font-size:17px}
 .yh-cards{grid-template-columns:1fr 1fr}
 }
-@media(max-width:560px){.yh-wrap{padding:14px 10px}.yh-frame{border-width:6px;border-radius:22px}.yh-top{padding:20px 20px 0}.yh-cards{grid-template-columns:1fr}.yh-card + .yh-card{display:none}}
+@media(max-width:560px){.yh-wrap{padding:14px 10px}.yh-frame{border-width:6px;border-radius:22px}.yh-cards{grid-template-columns:1fr}.yh-card + .yh-card{display:none}}
 /* ============ LANDING HERO — orange "Yoga School" reference adaptation ============ */
 .landing{background:var(--cream);padding:26px 22px 10px}
 .landing-panel{position:relative;max-width:1280px;margin:0 auto;border-radius:28px;overflow:hidden;color:#fff;

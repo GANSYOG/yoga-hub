@@ -131,8 +131,6 @@
     var b = $("#burger"), m = $("#mnav");
     b.onclick = function () { var open = m.style.display !== "flex"; m.style.display = open ? "flex" : "none"; b.setAttribute("aria-expanded", open); };
     m.addEventListener("click", function () { if (innerWidth < 992) m.style.display = "none"; });
-    var yb = $("#yhBurger");
-    if (yb) yb.onclick = function () { var open = m.style.display !== "flex"; m.style.display = open ? "flex" : "none"; yb.setAttribute("aria-expanded", open); };
     // landing schedule card (reads centralized classSchedule)
     var ys = $("#yhSched");
     if (ys) ys.innerHTML = C.classSchedule.slice(0, 4).map(function (s) {
