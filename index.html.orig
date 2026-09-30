@@ -22,6 +22,7 @@
 <header class="nav" id="header"><div class="nav-in">
 <a class="logo" href="#/" aria-label="Yoga Hub home"><span class="logo-mark">Y</span><span>YOGA HUB<small>SINCE 2016 · MALAD EAST</small></span></a>
 <nav class="links" aria-label="Primary"><a href="#/" data-r>Home</a><a href="#/about" data-r>About</a><a href="#/classes" data-r>Programs</a><a href="#/yoga-classes" data-r>Yoga Classes</a><a href="#/ttc" data-r>Teacher Training</a><a href="#/testimonials" data-r>Testimonials</a><a href="#/gallery" data-r>Gallery</a><a href="#/contact" data-r>Contact</a></nav>
+<a class="btn btn-gold" style="padding:11px 18px;min-height:44px" href="#/free-trial">BOOK FREE TRIAL</a>
 <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
 </div><nav class="links" id="mnav" style="display:none;flex-direction:column;padding:0 22px 16px" aria-label="Mobile">
 <a href="#/">Home</a><a href="#/about">About</a><a href="#/classes">Programs</a><a href="#/yoga-classes">Yoga Classes</a><a href="#/ttc">Teacher Training</a><a href="#/testimonials">Testimonials</a><a href="#/gallery">Gallery</a><a href="#/contact">Contact</a><a href="#/faq">FAQ</a></nav></header>
